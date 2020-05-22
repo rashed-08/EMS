@@ -1,0 +1,10 @@
+language: nodejs
+dist: trusty
+sudo: required
+
+before_script:
+	npm install -g @angular/cli
+
+script:
+	ng lint
+	ng build --prod --base-href https://rashed-08.github.io/ems/
