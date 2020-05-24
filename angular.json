@@ -49,6 +49,7 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
+              "baseHref": "https://rashed-08.github.io/EMS/",
               "buildOptimizer": true,
               "budgets": [
                 {
