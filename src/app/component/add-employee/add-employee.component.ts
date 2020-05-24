@@ -9,7 +9,7 @@ import { EmployeeService } from '../../services/employee.service';
 })
 export class AddEmployeeComponent implements OnInit {
 
-  private employee: Employee;
+  employee: Employee;
 
   constructor(private employeeService: EmployeeService) {
     this.employee = new Employee();

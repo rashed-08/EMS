@@ -28,4 +28,11 @@ export class EmployeeService {
   public getAllEmployee(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.url);
   }
+
+  /**
+   * deleteEmployee
+   */
+  public deleteEmployee(id: number) {
+    return this.http.delete(`${this.url}/${id}`);
+  }
 }

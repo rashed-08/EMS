@@ -9,7 +9,7 @@ import { EmployeeService } from '../../services/employee.service';
 })
 export class EmployeeListComponent implements OnInit {
 
-  private employees: Employee[];
+  employees: Employee[];
 
   constructor(private employeeService: EmployeeService) { }
 
@@ -18,7 +18,7 @@ export class EmployeeListComponent implements OnInit {
   }
 
   reloadData() {
-    this.employeeService.getAllEmployee().subscribe(
+    return this.employeeService.getAllEmployee().subscribe(
       data => {
         this.employees = data;
       },
@@ -38,7 +38,15 @@ export class EmployeeListComponent implements OnInit {
   }
 
   public deleteEmployee(id: number) {
-    console.log('Delete Employee: ' + id);
+    this.employeeService.deleteEmployee(id).subscribe(
+      data => {
+        console.log(data);
+        this.reloadData();
+      },
+      errors => {
+        console.log(errors);
+      }
+    );
   }
 
 }

@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { EmployeeListComponent } from './component/employee-list/employee-list.component';
 import { AddEmployeeComponent } from './component/add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './component/update-employee/update-employee.component';
-import { DeleteEmployeeComponent } from './component/delete-employee/delete-employee.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './component/about/about.component';
 
@@ -18,7 +17,6 @@ import { AboutComponent } from './component/about/about.component';
     EmployeeListComponent,
     AddEmployeeComponent,
     UpdateEmployeeComponent,
-    DeleteEmployeeComponent,
     AboutComponent
   ],
   imports: [
