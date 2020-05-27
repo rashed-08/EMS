@@ -35,4 +35,16 @@ export class EmployeeService {
   public deleteEmployee(id: number) {
     return this.http.delete(`${this.url}/${id}`);
   }
+
+  /**
+   * getEmployee is a method which retrive single Employee
+   */
+  public getEmployee(id: number): Observable<Employee> {
+    return this.http.get<Employee>(`${this.url}/${id}`);
+  }
+
+  public updatedEmployee(id: number, employee: Employee) {
+    return this.http.put(`${this.url}/${id}`, employee);
+  }
+
 }

@@ -4,20 +4,26 @@ import { EmployeeListComponent } from './component/employee-list/employee-list.c
 import { AddEmployeeComponent } from './component/add-employee/add-employee.component';
 import { UpdateEmployeeComponent } from './component/update-employee/update-employee.component';
 import { AboutComponent } from './component/about/about.component';
+import { EmployeeDetailsComponent } from './component/employee-details/employee-details.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
   {
     path: 'employees',
-    component: EmployeeListComponent
+    component: EmployeeListComponent,
   },
   {
     path: 'add-employee',
     component: AddEmployeeComponent
   },
   {
-    path: 'update-employee',
+    path: 'update-employee/:id',
     component: UpdateEmployeeComponent
+  },
+  {
+    path: 'details/:id',
+    component: EmployeeDetailsComponent
   },
   {
     path: 'about',

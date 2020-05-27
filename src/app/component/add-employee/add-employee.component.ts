@@ -19,7 +19,6 @@ export class AddEmployeeComponent implements OnInit {
   }
 
   public emsSubmit() {
-    console.log(this.employee);
     this.employeeService.submitEmployee(this.employee).subscribe();
   }
 

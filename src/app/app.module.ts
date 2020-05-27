@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,7 @@ import { AddEmployeeComponent } from './component/add-employee/add-employee.comp
 import { UpdateEmployeeComponent } from './component/update-employee/update-employee.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './component/about/about.component';
+import { EmployeeDetailsComponent } from './component/employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,14 @@ import { AboutComponent } from './component/about/about.component';
     EmployeeListComponent,
     AddEmployeeComponent,
     UpdateEmployeeComponent,
-    AboutComponent
+    AboutComponent,
+    EmployeeDetailsComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    RouterModule,
     AppRoutingModule,
     BrowserAnimationsModule
   ],

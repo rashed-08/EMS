@@ -1,0 +1,8 @@
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    
+    & label {
+        justify-self: center;
+    }
+}
