@@ -12,7 +12,7 @@ export class EmployeeService {
   private url: string;
 
   constructor(private http: HttpClient, router: Router) {
-    this.url = 'http://10.42.0.1:8080//api/v1/employees';
+    this.url = 'https://ems-crud.herokuapp.com/api/v1/employees';
   }
 
   /**
